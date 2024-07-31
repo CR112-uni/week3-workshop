@@ -17,3 +17,11 @@ let server = http.listen(3000, function () {
 app.get('/text', function (req, res) {
     res.sendFile(__dirname + '/www/test.html');
 });
+
+app.get('/text', function (req, res) {
+    res.sendFile(__dirname + '/www/routes/login.html');
+});
+
+app.get('/text', function (req, res) {
+    res.sendFile(__dirname + '/www/routes/account.html');
+});
